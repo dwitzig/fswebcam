@@ -32,7 +32,7 @@ fswebcam: $(OBJS)
 	${CC} ${CFLAGS} -c $< -o $@
 
 fswebcam.1.gz: fswebcam.1
-	gzip -c --best fswebcam.1 > fswebcam.1.gz
+	gzip -c fswebcam.1 > fswebcam.1.gz
 
 clean:
 	rm -f core* *.o fswebcam fswebcam.1.gz
